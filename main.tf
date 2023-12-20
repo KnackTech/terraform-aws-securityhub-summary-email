@@ -536,7 +536,7 @@ resource "aws_lambda_function" "sechub_summariser" {
   handler          = "sec-hub-email.lambda_handler"
   source_code_hash = data.archive_file.code.output_base64sha256
 
-  runtime = "python3.7"
+  runtime = "python3.11"
   timeout = 30
 
   environment {
